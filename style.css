@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body{
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20rem;
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway' , sans-serif ;
+}
+
+.fylo{
+    width: 20rem;
+    height: 12.5rem;
+    background-color: hsl(228, 56%, 26%);
+    margin-right: 2rem;
+    border-radius: .5rem 7rem .5rem .5rem;
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: block;
+    z-index: 1;
+}
+
+.log{
+    width: 80%;
+    height: 4.25rem;
+}
+
+.others{
+    width: 70%;
+    height: 4.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.img, .img1{
+    background-color: hsl(229, 57%, 11%);
+    padding: .5rem;
+    width: 2rem;
+    border-radius: .5rem;
+    height: 2rem;
+}
+
+.img1{
+    box-sizing: content-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    top: 12.5rem;
+    width: 100%;
+}
+
+.info{
+    color: hsl(229, 7%, 55%);
+    display: flex;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 8rem;
+    width: 30rem;
+    background-color:  hsl(228, 56%, 26%);
+    margin-top: 4.5rem;
+    border-radius: .5rem;
+}
+
+.infocon{
+    line-height: .5;
+    width: 100%;
+}
+
+span{
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+}
+
+.num{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    width: 100%;
+    height: 1rem;
+    background:  hsl(229, 57%, 11%);
+}
+
+hr{
+    margin-right: 2rem;
+    height: .5rem;
+    width: 25rem;
+    background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 2.5rem;
+    border-style: none;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: .5rem;
+}
+
+.logo{
+    position: relative;
+    display: block;
+}
+
+p{
+    word-spacing: .3rem;
+}
+
+.comment-box{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    top: 2rem;
+    right: 8.7rem;
+    height: 4rem;
+    width: 7.5rem;
+    border-radius: .5rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+
+.comment-box::before{
+    content: " ";
+    position: relative;
+    top: 2.25rem;
+    border-left: 1.25rem solid transparent;
+    border-top: 1.25rem solid #fff;
+    right: -6.25rem;
+}
+
+.rem{
+    position: relative;
+    right: .5rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+sub{
+    color: hsl(229, 7%, 55%);
+    position: relative;
+    right: .5rem;
+}
+
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: 12rem;
+    }
+
+    body{
+        background-image: url(./images/bg-mobile.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position-y: 0;
+    }
+
+    .fylo{
+        position: relative;
+        left: 1rem;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .log{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .others{
+        width: 80%;
+        justify-content: space-around;
+        position: relative;
+        left: 2rem;
+    }
+
+    .info{
+        position: relative;
+        top: -2rem;
+    }
+
+    .comment-box{
+        position: relative;
+        top: -3.5rem;
+        left: .5rem;
+        width: 12.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .comment-box::before{
+        display: none;
+    }
+
+    .p{
+        text-align: center;
+    }
+}
+
+@media(max-width:425px){
+    .info{
+        width: 20rem;
+    }
+
+    .fylo{
+        width: 20rem;
+        padding-left: .75rem;
+    }
+
+    .comment-box{
+        position: relative;
+        left: 0;
+        width: 9rem;
+    }
+}
+
+@media(max-width:320px){
+    .info, .fylo{
+        width: 18rem;
+    }
+    
+    .info{
+        padding: .5rem;
+    }
+    .infocon{
+        padding: 0;
+    }
+
+    .comment-box{
+        width: 8rem;
+    }
+
+    .p{
+        word-spacing: 0;
+        text-align: center;
+    }
+}
